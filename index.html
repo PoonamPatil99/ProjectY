@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./fontawesome-free-5.15.2-web/css/all.min.css">
+    
+
+</head>
+
+<body>
+    <header>
+        <!-- <nav class="navbar"> -->
+        <!-- <div class="container-fluid bg"> -->
+        <div class="row">
+            <!-- <div class="container-fluid bg"> -->
+
+            <div class="name">
+                <a href="#">
+                    <h1><i class="fab fa-youtube" id="youtube-logo"></i>Youtube</h1>
+                </a>
+            </div>
+
+
+            <!-- search bar -->
+
+            <div id="centre" class="ctop">
+                <input type="text" placeholder="Search.." name="search" style="width: 500px; height: 30px;">
+                <button type="submit" style="width: 50px; height: 30px;"><i class="fa fa-search"></i></button>
+            </div>
+
+
+
+            <!-- mic  -->
+
+
+            <div class="mic">
+                <i class="fas fa-microphone" id="mic-logo"></i>
+            </div>
+
+
+            <!-- youtube apps icon -->
+
+            <div class="tdot">
+                <img src="./images/app1.png" style="height: 25px; width: 25px; margin: 1.2rem 12rem;">
+            </div>
+
+            <!-- setting -->
+            <div class="dot">
+                <img src="./images/dot1.png" style="height: 20px; width: 25px; margin: 1.3rem -10rem;">
+            </div>
+
+            <!-- profile sign in -->
+            <div>
+                <button type="text"
+                    style="width: 100px; height: 30px; border-color: blue; background-color: white; margin: 1rem -5rem;text-decoration: blue; ">
+                    <i class="fas fa-user-circle" id="user" style="margin: 0.3rem 1rem;">SIGNIN</i>
+                </button>
+            </div>
+
+        </div>
+        <!-- </div> -->
+        <!-- </nav> -->
+    </header>
+
+    <!-- ===========================================main video section=========================================== -->
+    <section>
+       
+        <div class="row" style="display: inline-flex; padding-top: 100px;">
+
+            <div class="col">
+                <video id="video" poster="./images/d1.png" width="70%" height="400px" controls="controls"
+                    style="padding-top:10px;">
+                    <source src="./video/nayan.mp4.mp4" type="video/mp4" aria-controls="full">
+                </video>
+                <p id="video_heading" style="padding-top: 10px;">Nayan Video Song | Dhvani B Jubin N | Lijo G Dj Chetas
+                    Manoj M Manhar U |
+                    Radhika Vinay | Bhushan K</p>
+                <p>1,23,345 Views.Nov20, 2020
+                    <a style="margin-left: 350px;">
+                        <i class="far fa-thumbs-up" id="thumb">17k</i>
+                    </a>
+
+                    <a>
+                        <i class="far fa-thumbs-down" id="thumb">1k</i>
+
+                    </a>
+                    <a>
+                        <i class="fas fa-share" id="share">Share</i>
+                    </a>
+                </p>
+
+                <hr />
+
+
+                <div class="row" id="toprow" style="padding-left: 20px;">
+
+                    <div id="profile-pic" style="display: inline-flex;">
+
+                    </div>
+                    <div id="video-details">
+                       
+                        <div id="channel" style="font-style: oblique;">T-series</div>
+                        <div id="sub">3M Subscriber
+                        </div>
+                        </div>
+                        <div id="aa" style="padding-left: 600px;padding-top: 5px;">
+                            <button style="background-color: red;border-color: blanchedalmond;">subscriber</button>
+                        </div>
+                    
+                </div>
+                <div id="dat" style="width: 600px; padding-left: 60px;padding-top: 30px;">
+                    Gulshan Kumar and T-Series presents Bhushan Kumar's "Nayan" brand new song in the
+                    voice of "Dhvani Bhanushali" & “Jubin Nautiyal”, music is given by Lijo George & Dj
+                    Chetas while lyrics are penned by Manoj Muntashir. The video is directed by Radhika
+                    Rao & Vinay Sapru.
+                </div>
+
+                <hr />
+
+                <!-- <div id="com" style="width: 900px;">
+
+                    <p>3 Comments</p>
+                    <p id="q"></p>
+                    <p id="qq"></p>
+                </div> -->
+            </div>
+        </div>
+       
+    </section>
+    <!-- ================================Right sides video section==================================================== -->
+    <section>
+
+        <div class="row" style="margin: -45rem 56rem;">
+            <div class="col" onclick="db()">
+                <div class="col-1" style="display: inline-flex;">
+                    <img src="./images/db3.png" width="200px" height="150px">
+                    <!-- </div>
+                <div class="col-1"> -->
+                    <div id="item">
+                        <div id="details">
+                            <!-- <div id="profile-pic"></div> -->
+                            <div id="video-details">
+                                <div id="title" style="height: auto; width: 200px;">
+
+                                    <p>NA JA TU Song | Bhushan Kumar | Tanishk Bagchi | New Song 2020</p>
+
+                                </div>
+                                <div id="channel" style="font-style: oblique;">T-series</div>
+                                <div id="views">10k views.
+                                    <span class="uploaded">5 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+
+            <div class="col" onclick="n1()">
+                <div class="col-1" style="display: inline-flex;">
+                    <img src="./images/n1.png" width="200px" height="150px">
+                    <!-- </div>
+                <div class="col-1"> -->
+                    <div id="item">
+                        <div id="details">
+                            <!-- <div id="profile-pic"></div> -->
+                            <div id="video-details">
+                                <div id="title" style="height: auto; width: 200px;">
+                                    <p>Baarish ( Full Video ) Neha Kakkar | Bilal Saeed | Desi Music Factory</p>
+
+                                </div>
+                                <div id="channel" style="font-style: oblique;">Desi Music Factory</div>
+                                <div id="views">11k views.
+                                    <span class="uploaded">7 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" onclick="n2()">
+                <div class="col-1" style="display: inline-flex;">
+                    <img src="./images/n2.png" width="200px" height="150px">
+                    <!-- </div>
+                <div class="col-1"> -->
+                    <div id="item">
+                        <div id="details">
+                            <!-- <div id="profile-pic"></div> -->
+                            <div id="video-details">
+                                <div id="title" style="height: auto; width: 200px;">
+                                    <p>Teri Aankhon Mein Song: Divya K | Darshan R, Neha K | Pearl V Manan B | Radhika,
+                                        Vinay | Bhushan K</p>
+
+                                </div>
+                                <div id="channel" style="font-style: oblique;">T-series</div>
+                                <div id="views">10M views.
+                                    <span class="uploaded">20 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" onclick="n3()">
+                <div class="col-1" style="display: inline-flex;">
+                    <img src="./images/n3.png" width="200px" height="150px">
+                    <!-- </div>
+                <div class="col-1"> -->
+                    <div id="item">
+                        <div id="details">
+                            <!-- <div id="profile-pic"></div> -->
+                            <div id="video-details">
+                                <div id="title" style="height: auto; width: 200px;">
+                                    <p>YAAD PIYA KI AANE LAGI - FULL VIDEO SONG•Divya Khosla Kumar•Neha Kakkad•Tanishk B
+                                    </p>
+
+                                </div>
+                                <div id="channel" style="font-style: oblique;">T-series</div>
+                                <div id="views">10k views.
+                                    <span class="uploaded">1 year ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" onclick="n4()">
+                <div class="col-1" style="display: inline-flex;">
+                    <img src="./images/n5.png" width="200px" height="150px">
+                    <!-- </div>
+                <div class="col-1"> -->
+                    <div id="item">
+                        <div id="details">
+                            <!-- <div id="profile-pic"></div> -->
+                            <div id="video-details">
+                                <div id="title" style="height: auto; width: 200px;">
+                                    <p>KGF 2 Mehbooba Video Song | Yash | Nora Fatehi | Sanjay Dutt | Neha Kakkar |
+                                        Prasanth N</p>
+
+                                </div>
+                                <div id="channel" style="font-style: oblique;">YRF films</div>
+                                <div id="views">5M views.
+                                    <span class="uploaded">1 Year ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" onclick="n5()">
+                <div class="col-1" style="display: inline-flex;">
+                    <img src="./images/n6.png" width="200px" height="150px">
+                    <!-- </div>
+                <div class="col-1"> -->
+                    <div id="item">
+                        <div id="details">
+                            <!-- <div id="profile-pic"></div> -->
+                            <div id="video-details">
+                                <div id="title" style="height: auto; width: 200px;">
+                                    <p>SIMMBA: Aankh Marey | Ranveer Singh, Sara Ali Khan | Tanishk Bagchi,Mika
+                                        Singh,Neha Kakkar</p>
+
+                                </div>
+                                <div id="channel" style="font-style: oblique;">T-series</div>
+                                <div id="views">17M views.
+                                    <span class="uploaded">2 Year ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col" onclick="n6()">
+                <div class="col-1" style="display: inline-flex;">
+                    <img src="./images/n10.png" width="200px" height="150px">
+                    <div id="item">
+                        <div id="details">
+                            <!-- <div id="profile-pic"></div> -->
+                            <div id="video-details">
+                                <div id="title" style="height: auto; width: 200px;">
+                                    <p>Oh Humsafar Lyrical | Neha Kakkar, Himansh Kohli | Tony Kakkar | Bhushan Kumar |
+                                        Manoj Muntashir</p>
+
+                                </div>
+                                <div id="channel" style="font-style: oblique;">T-series</div>
+                                <div id="views">10M views.
+                                    <span class="uploaded">3 Year ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" onclick="n4()">
+                <div class="col-1" style="display: inline-flex;">
+                    <img src="./images/n4.png" width="200px" height="150px">
+                    <div id="item">
+                        <div id="details">
+                            <!-- <div id="profile-pic"></div> -->
+                            <div id="video-details">
+                                <div id="title" style="height: auto; width: 200px;">
+                                    <p>O saiyyaaaa jiiiiiiiiii
+                                        yo yo honey Singh
+                                        Tanishk Bagchi,Mika
+                                        Singh,Neha Kakkar
+                                    </p>
+
+                                </div>
+                                <div id="channel" style="font-style: oblique;">T-series</div>
+                                <div id="views">10M views.
+                                    <span class="uploaded">3 Year ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" onclick="n6()">
+                <div class="col-1" style="display: inline-flex;">
+                    <img src="./images/n10.png" width="200px" height="150px">
+                    <div id="item">
+                        <div id="details">
+                            <!-- <div id="profile-pic"></div> -->
+                            <div id="video-details">
+                                <div id="title" style="height: auto; width: 200px;">
+                                    <p>Oh Humsafar Lyrical | Neha Kakkar, Himansh Kohli | Tony Kakkar | Bhushan Kumar |
+                                        Manoj Muntashir</p>
+
+                                </div>
+                                <div id="channel" style="font-style: oblique;">T-series</div>
+                                <div id="views">10M views.
+                                    <span class="uploaded">3 Year ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <script src="./js/main.js"></script> 
+   
+</body>
+
+
+
+</html>
